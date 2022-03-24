@@ -6,8 +6,11 @@ import hogs from "../porkers_data";
 
 function App() {
 
-	const handleSort = () => {
-		console.log('Selected something')
+	const [sort, setSort] = useState("None");
+	const [filter, setFilter] = useState("All");
+
+	const handleSort = (event) => {
+		console.log(`Sorting by ${event.target.value}`)
 	}
 
 	return (

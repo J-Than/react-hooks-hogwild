@@ -11,7 +11,7 @@ const SortButtons = ({ handleSort }) => {
         <option value="Specialty">Sort by Specialty</option>
         <option value="Medal">Sort by Highest Medal Achieved</option>
       </select>
-      <select name="greased" onChange={handleSort}>
+      <select name="filter" onChange={handleSort}>
         <option value="All">Display All</option>
         <option value="Greased">Display Greased Hogs Only</option>
         <option value="Ungreased">Display Ungreased Hogs Only</option>
