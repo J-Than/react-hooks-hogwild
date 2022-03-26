@@ -7,16 +7,10 @@ function PigTile({ hog }) {
 
 	const handleClick = event => setDetails(details => details = !details)
 
-	const hogDetails = details ?
-		< specialty: "Being incredibly cute",
-    greased: false,
-    weight: 2.0,
-    "highest medal achieved": "bronze",
-
 	return (
 		<div className="pigTile" onClick={handleClick}>
 			<h3>{hog.name}</h3>
-			<img src={hog.image} />
+			<img src={hog.image} alt={hog.name} />
 			{ details ? <PigDetails hog={hog} /> : null }
 		</div>
 	);

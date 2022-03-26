@@ -7,8 +7,7 @@ function PigDetails({ hog }) {
       <p>Specialty: {hog.specialty}</p>
       <p>Greased?: {hog.greased ? 'Yes' : 'No'}</p>
       <p>Weight: {hog.weight} kg</p>
-      <p>Highest medal achieved: {hog['highest medal achieved']</p>
-			{ details ? <PigDetails hog={hog} /> : null }
+      <p>Highest medal achieved: {hog['highest medal achieved']}</p>
 		</div>
 	);
 }
